@@ -3,8 +3,6 @@ inputWord.disabled = true; // Disable input until game starts
 let spacebarListener = null; // Declare the event listener variable outside the function
 //Also this variable is used to remove the event listener when the game ends, so it doesn't keep listening for the spacebar
 
-//write a function that will start the game when the user clicks the start button 
-
 // Variables for the game
 let currentIndex = 0;
 let correctCount = 0;
@@ -50,7 +48,7 @@ function displayTime() { // Function that displays the timer
 function addKeyDownEventListener() {
     spacebarListener = document.addEventListener("keydown", function (event) {
         if (event.code === "Space") {
-            checkWord();
+            checkWord(); 
         }
     });
 }
