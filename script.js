@@ -31,7 +31,7 @@ function addKeyDownEventListener() {
 
 
 function displayTime() { // Function that displays the timer
-    let time = 5;
+    let time = 59;
     timer = setInterval(function () {
         if (time === 0) {
             endGame(); // End the game when the timer reaches 0
