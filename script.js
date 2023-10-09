@@ -31,7 +31,7 @@ function addKeyDownEventListener() {
 
 
 function displayTime() { // Function that displays the timer
-    let time = 59;
+    let time = 5;
     timer = setInterval(function () {
         if (time === 0) {
             endGame(); // End the game when the timer reaches 0
@@ -63,7 +63,10 @@ function displayText() {
     }
 }
 
+
+
 let gameEnded = false;
+
 // Function that checks the relation Input - Actual Word
 function checkWord() {
     if (gameEnded) return;
